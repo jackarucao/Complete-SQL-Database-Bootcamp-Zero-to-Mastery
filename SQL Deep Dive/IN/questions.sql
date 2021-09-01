@@ -4,13 +4,13 @@
 * Question: How many orders were made by customer 7888, 1082, 12808, 9623
 */
 
-SELECT * FROM orders;
+SELECT count (customer_no )FROM orders where customer_no in (7888, 1082,12808,9623);
 
 
 /*
 * DB: World
 * Table: city
-* Question: How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
+* Question: How many cities are in the district of ?
 */
 
-SELECT * FROM city;
+SELECT count (city) FROM city where district in 
